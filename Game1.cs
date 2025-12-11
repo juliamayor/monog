@@ -42,6 +42,8 @@ public class Game1 : Game
     private float gravity = 1200f;
     public int groundy;
 
+    private bool DoubleJumpPrimed;
+
     Player player = new();
 
     private float worldwidth = 3000f;
@@ -115,7 +117,7 @@ public class Game1 : Game
         
         gameObjects.Add(new PowerUp(new Vector2(800, 400), PowerUpType.JumpBoost, 30, 10f));
         gameObjects.Add(new Teleporter(new Vector2(600, 400), new Vector2(1500, 300), 50, 50));
-
+        gameObjects.Add(new PowerUp(new Vector2(900, 500), PowerUpType.DoubleJump, 50, 15f));
 
 
         }
@@ -144,11 +146,23 @@ public class Game1 : Game
         playerposition.X += player.Speed * dt;
     }
 
-    if (keyboard.IsKeyDown(Keys.Space) && player.IsOnGround)
+    
+    if (keyboard.IsKeyDown(Keys.Space) && player.IsOnGround || keyboard.IsKeyDown(Keys.Space) && player.HasDoubleJump)
     {
+        if(keyboard.IsKeyDown(Keys.Space) && !player.IsOnGround && player.HasDoubleJump && DoubleJumpPrimed == true)
+        {
+            DoubleJumpPrimed = false;
+        }
+        if(keyboard.IsKeyDown(Keys.Space) && player.IsOnGround)
+        {
+            DoubleJumpPrimed = true;
+        }
         playervelocity.Y = player.JumpSpeed;
         player.IsOnGround = false;
+        
+        
     }
+   
 
     float targetCamX = playerposition.X - viewport.Width / 2f;
 
