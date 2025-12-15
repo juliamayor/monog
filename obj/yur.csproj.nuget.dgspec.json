@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Julia ÅM\\monog\\yur.csproj": {}
+    "C:\\Users\\Julia ÅM\\monog\\yur.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Julia ÅM\\monog\\yur.csproj": {
+    "C:\\Users\\Julia ÅM\\monog\\yur.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Julia ÅM\\monog\\yur.csproj",
+        "projectUniqueName": "C:\\Users\\Julia ÅM\\monog\\yur.csproj",
         "projectName": "yur",
-        "projectPath": "c:\\Users\\Julia ÅM\\monog\\yur.csproj",
+        "projectPath": "C:\\Users\\Julia ÅM\\monog\\yur.csproj",
         "packagesPath": "C:\\Users\\Julia ÅM\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Julia ÅM\\monog\\obj\\",
+        "outputPath": "C:\\Users\\Julia ÅM\\monog\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

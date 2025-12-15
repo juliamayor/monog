@@ -42,7 +42,10 @@ public class Game1 : Game
     private float gravity = 1200f;
     public int groundy;
 
-    private bool DoubleJumpPrimed;
+    private float jumptimer = 0f;
+    private float jumpcooldown = 0.2f;
+
+    private bool _hasusedoublejump = false;
 
     Player player = new();
 
@@ -118,6 +121,7 @@ public class Game1 : Game
         gameObjects.Add(new PowerUp(new Vector2(800, 400), PowerUpType.JumpBoost, 30, 10f));
         gameObjects.Add(new Teleporter(new Vector2(600, 400), new Vector2(1500, 300), 50, 50));
         gameObjects.Add(new PowerUp(new Vector2(900, 500), PowerUpType.DoubleJump, 50, 15f));
+        gameObjects.Add(new PowerUp(new Vector2(1200, 400), PowerUpType.Invincibility, 30, 10f));
 
 
         }
@@ -147,22 +151,25 @@ public class Game1 : Game
     }
 
     
-    if (keyboard.IsKeyDown(Keys.Space) && player.IsOnGround || keyboard.IsKeyDown(Keys.Space) && player.HasDoubleJump)
+    if(jumptimer > 0f)
     {
-        if(keyboard.IsKeyDown(Keys.Space) && !player.IsOnGround && player.HasDoubleJump && DoubleJumpPrimed == true)
-        {
-            DoubleJumpPrimed = false;
-        }
-        if(keyboard.IsKeyDown(Keys.Space) && player.IsOnGround)
-        {
-            DoubleJumpPrimed = true;
-        }
-        playervelocity.Y = player.JumpSpeed;
-        player.IsOnGround = false;
-        
-        
+        jumptimer -= dt;
     }
-   
+    if(jumptimer <= 0 && keyboard.IsKeyDown(Keys.Space) && (player.IsOnGround || player.HasDoubleJump && !_hasusedoublejump))
+    {
+        if (player.IsOnGround)
+        {
+            playervelocity.Y = player.JumpSpeed;
+            _hasusedoublejump = false;
+            player.IsOnGround = false;
+        }
+        else if (player.HasDoubleJump && !_hasusedoublejump)
+        {
+            playervelocity.Y = player.JumpSpeed;
+            _hasusedoublejump = true;
+        }
+        jumptimer = jumpcooldown;
+    }
 
     float targetCamX = playerposition.X - viewport.Width / 2f;
 
@@ -234,7 +241,7 @@ public class Game1 : Game
     // Tittar efter en collision och isf lägger till
     foreach (var enemy in enemies)
     {
-        if (playerHitbox.Intersects(enemy.Hitbox))
+        if (playerHitbox.Intersects(enemy.Hitbox) && !player.IsInvincible)
         {
             playerdeathcount += 1;
         }
