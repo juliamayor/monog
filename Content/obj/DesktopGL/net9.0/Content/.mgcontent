@@ -4,11 +4,11 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>c:/Users/Julia ÅM/monog/Content/background1.jfif</File>
-    <File>c:/Users/Julia ÅM/monog/Content/mushroom sprite (2).png</File>
-    <File>c:/Users/Julia ÅM/monog/Content/MyFont.spritefont</File>
-    <File>c:/Users/Julia ÅM/monog/Content/patroller.png</File>
-    <File>c:/Users/Julia ÅM/monog/Content/trees.png</File>
+    <File>C:/Users/julia/OneDrive/Dokument/monog/Content/background1.jfif</File>
+    <File>C:/Users/julia/OneDrive/Dokument/monog/Content/mushroom sprite (2).png</File>
+    <File>C:/Users/julia/OneDrive/Dokument/monog/Content/MyFont.spritefont</File>
+    <File>C:/Users/julia/OneDrive/Dokument/monog/Content/patroller.png</File>
+    <File>C:/Users/julia/OneDrive/Dokument/monog/Content/trees.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />

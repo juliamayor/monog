@@ -118,12 +118,36 @@ public class Game1 : Game
         gameObjects.Add(new PowerUp(new Vector2(800, 400), PowerUpType.JumpBoost, 30, 10f));
         gameObjects.Add(new Teleporter(new Vector2(600, 400), new Vector2(1500, 300), 50, 50));
         gameObjects.Add(new PowerUp(new Vector2(900, 500), PowerUpType.DoubleJump, 50, 15f));
+        gameObjects.Add(new PowerUp(new Vector2(300, 300), PowerUpType.Invincibility, 50, 10f));
 
+        Random rand = new Random();
+        bool validPos = false;
+        while(!validPos)
+        {
+            int posX = rand.Next(0, 990); // lite under skärmens max
+            int posY = rand.Next(0, 690);
+            validPos = true;
+            foreach(var rect in platforms)
+            {
+                if(posX == rect.X && posY == rect.Y)
+                {
+                    validPos = false; //fortsätter while loopen
+                    break;
+                }
+            }
+
+            if (validPos)
+            {
+                gameObjects.Add(new Teleporter(new Vector2(300, 500), new Vector2(posX, posY), 50, 50));
+            }
+        }
 
         }
 
     protected override void Update(GameTime gameTime)
 {
+
+
     var viewport = GraphicsDevice.Viewport;
     var keyboard = Keyboard.GetState();
     if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed ||
@@ -135,7 +159,7 @@ public class Game1 : Game
     var playerposition = player.Position;
     var playervelocity = player.Velocity;
 
-    var previousPosition = playerposition;
+    //var previousPosition = playerposition;
 
     if (keyboard.IsKeyDown(Keys.A))
     {
@@ -159,8 +183,6 @@ public class Game1 : Game
         }
         playervelocity.Y = player.JumpSpeed;
         player.IsOnGround = false;
-        
-        
     }
    
 
@@ -234,11 +256,25 @@ public class Game1 : Game
     // Tittar efter en collision och isf lägger till
     foreach (var enemy in enemies)
     {
-        if (playerHitbox.Intersects(enemy.Hitbox))
+        if (playerHitbox.Intersects(enemy.Hitbox) && !player.IsInvincible)
         {
             playerdeathcount += 1;
         }
     }
+
+    foreach (var obj in gameObjects)
+    {
+        if(obj is PowerUp powerUp && powerUp.IsActive) //om obj (vilket är en IGameObject) är en PowerUp, vid namn powerUp och är aktiv.
+        {
+            powerUp.Duration -= dt;
+            if(powerUp.Duration <= 0)
+            {
+                powerUp.IsActive = false;
+            }
+        }
+    } //Listan gameobjects är en IGameObject men datan vi matar in är en PowerUp, så vi kollar om obj är en PowerUp och sparar den som powerUp för att komma åt Duration.
+
+    player.Update(dt);
 
     base.Update(gameTime);
 }
@@ -283,7 +319,6 @@ public class Game1 : Game
 
         foreach (var obj in gameObjects)
         {
-
             obj.Draw(_spriteBatch, cameraPosition, pixel);
         }
 

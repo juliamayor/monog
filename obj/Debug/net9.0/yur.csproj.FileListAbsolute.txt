@@ -167,3 +167,46 @@ c:\Users\Julia ÅM\monog\obj\Debug\net9.0\refint\yur.dll
 c:\Users\Julia ÅM\monog\obj\Debug\net9.0\yur.pdb
 c:\Users\Julia ÅM\monog\obj\Debug\net9.0\yur.genruntimeconfig.cache
 c:\Users\Julia ÅM\monog\obj\Debug\net9.0\ref\yur.dll
+C:\Users\julia\OneDrive\Dokument\monog\bin\Debug\net9.0\Content\ChatGPT Image Nov 6, 2025, 10_48_41 AM.xnb
+C:\Users\julia\OneDrive\Dokument\monog\bin\Debug\net9.0\Content\ghost.xnb
+C:\Users\julia\OneDrive\Dokument\monog\bin\Debug\net9.0\Content\MyFont.spritefont
+C:\Users\julia\OneDrive\Dokument\monog\bin\Debug\net9.0\Content\Zoja.xnb
+C:\Users\julia\OneDrive\Dokument\monog\bin\Debug\net9.0\Content\background1.xnb
+C:\Users\julia\OneDrive\Dokument\monog\bin\Debug\net9.0\Content\mushroom sprite (2).xnb
+C:\Users\julia\OneDrive\Dokument\monog\bin\Debug\net9.0\Content\MyFont.xnb
+C:\Users\julia\OneDrive\Dokument\monog\bin\Debug\net9.0\Content\patroller.xnb
+C:\Users\julia\OneDrive\Dokument\monog\bin\Debug\net9.0\Content\trees.xnb
+C:\Users\julia\OneDrive\Dokument\monog\bin\Debug\net9.0\yur.exe
+C:\Users\julia\OneDrive\Dokument\monog\bin\Debug\net9.0\yur.deps.json
+C:\Users\julia\OneDrive\Dokument\monog\bin\Debug\net9.0\yur.runtimeconfig.json
+C:\Users\julia\OneDrive\Dokument\monog\bin\Debug\net9.0\yur.dll
+C:\Users\julia\OneDrive\Dokument\monog\bin\Debug\net9.0\yur.pdb
+C:\Users\julia\OneDrive\Dokument\monog\bin\Debug\net9.0\MonoGame.Framework.dll
+C:\Users\julia\OneDrive\Dokument\monog\bin\Debug\net9.0\NVorbis.dll
+C:\Users\julia\OneDrive\Dokument\monog\bin\Debug\net9.0\runtimes\android-arm\native\libopenal.so
+C:\Users\julia\OneDrive\Dokument\monog\bin\Debug\net9.0\runtimes\android-arm64\native\libopenal.so
+C:\Users\julia\OneDrive\Dokument\monog\bin\Debug\net9.0\runtimes\android-x64\native\libopenal.so
+C:\Users\julia\OneDrive\Dokument\monog\bin\Debug\net9.0\runtimes\android-x86\native\libopenal.so
+C:\Users\julia\OneDrive\Dokument\monog\bin\Debug\net9.0\runtimes\ios-arm64\native\libopenal.a
+C:\Users\julia\OneDrive\Dokument\monog\bin\Debug\net9.0\runtimes\iossimulator-arm64\native\libopenal.a
+C:\Users\julia\OneDrive\Dokument\monog\bin\Debug\net9.0\runtimes\iossimulator-x64\native\libopenal.a
+C:\Users\julia\OneDrive\Dokument\monog\bin\Debug\net9.0\runtimes\linux-arm64\native\libopenal.so
+C:\Users\julia\OneDrive\Dokument\monog\bin\Debug\net9.0\runtimes\linux-x64\native\libopenal.so
+C:\Users\julia\OneDrive\Dokument\monog\bin\Debug\net9.0\runtimes\osx\native\libopenal.dylib
+C:\Users\julia\OneDrive\Dokument\monog\bin\Debug\net9.0\runtimes\win-x64\native\openal.dll
+C:\Users\julia\OneDrive\Dokument\monog\bin\Debug\net9.0\runtimes\linux-x64\native\libSDL2-2.0.so.0
+C:\Users\julia\OneDrive\Dokument\monog\bin\Debug\net9.0\runtimes\osx\native\libSDL2-2.0.0.dylib
+C:\Users\julia\OneDrive\Dokument\monog\bin\Debug\net9.0\runtimes\win-x64\native\SDL2.dll
+C:\Users\julia\OneDrive\Dokument\monog\obj\Debug\net9.0\mgcb.tool.restore
+C:\Users\julia\OneDrive\Dokument\monog\obj\Debug\net9.0\yur.csproj.AssemblyReference.cache
+C:\Users\julia\OneDrive\Dokument\monog\obj\Debug\net9.0\yur.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\julia\OneDrive\Dokument\monog\obj\Debug\net9.0\yur.AssemblyInfoInputs.cache
+C:\Users\julia\OneDrive\Dokument\monog\obj\Debug\net9.0\yur.AssemblyInfo.cs
+C:\Users\julia\OneDrive\Dokument\monog\obj\Debug\net9.0\yur.csproj.CoreCompileInputs.cache
+C:\Users\julia\OneDrive\Dokument\monog\obj\Debug\net9.0\yur.sourcelink.json
+C:\Users\julia\OneDrive\Dokument\monog\obj\Debug\net9.0\yur.csproj.Up2Date
+C:\Users\julia\OneDrive\Dokument\monog\obj\Debug\net9.0\yur.dll
+C:\Users\julia\OneDrive\Dokument\monog\obj\Debug\net9.0\refint\yur.dll
+C:\Users\julia\OneDrive\Dokument\monog\obj\Debug\net9.0\yur.pdb
+C:\Users\julia\OneDrive\Dokument\monog\obj\Debug\net9.0\yur.genruntimeconfig.cache
+C:\Users\julia\OneDrive\Dokument\monog\obj\Debug\net9.0\ref\yur.dll
