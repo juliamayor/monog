@@ -18,7 +18,7 @@ public class PowerUp : IGameObject
     public Rectangle Hitbox { get; set; }
     public bool IsActive { get; set; } = true;
     public PowerUpType Type { get; set; }
-    public float Duration { get; set; } = 10f; // Sekunder
+    public float Duration { get; set; } = 7f; // Sekunder
     
     private float _bobTimer = 0f;
     private float _bobOffset = 0f;
@@ -60,7 +60,7 @@ public class PowerUp : IGameObject
         {
             case PowerUpType.JumpBoost:
                 player.AddPowerUp(PowerUpType.JumpBoost, Duration);
-                player.JumpSpeed = -1200f; // Normallt är det -800f
+                player.JumpSpeed = -1000f; // Normallt är det -800f
                 break;
                 
             case PowerUpType.SpeedBoost:
